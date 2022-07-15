@@ -116,7 +116,7 @@ window.addEventListener("scroll", () => {
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document
                 .querySelector(".nav-items a[href*=" + id + "]")
-                .classList.add("active");
+                .classList.toggle("active");
         } else {
             document
                 .querySelector(".nav-items a[href*=" + id + "]")
@@ -132,7 +132,7 @@ const navigation = document.querySelector(".navigation");
 const navItems = document.querySelectorAll(".nav-items a");
 
 menuBtn.addEventListener("click", () => {
-    navigation.classList.add("active");
+    navigation.classList.toggle("active");
 });
 
 closeBtn.addEventListener("click", () => {
@@ -160,7 +160,7 @@ ScrollReveal().reveal(".home .info h3, .home .info p, .about-info .btn", {
     origin: "right",
 });
 ScrollReveal().reveal(".home .info .btn", { delay: 700, origin: "bottom" });
-ScrollReveal().reveal(".media-icons i, .contact-left li", {
+ScrollReveal().reveal(".media-icons i, .contact-left li, .contact-left h2", {
     delay: 500,
     origin: "left",
     interval: 200,
@@ -169,7 +169,7 @@ ScrollReveal().reveal(".home-img, .about-img", {
     delay: 500,
     origin: "bottom",
 });
-ScrollReveal().reveal(".about .description, .copy-right", {
+ScrollReveal().reveal(".about .description, .contact-right", {
     delay: 600,
     origin: "right",
 });
@@ -179,7 +179,7 @@ ScrollReveal().reveal(".about .professional-list li, .copy-right", {
     interval: 200,
 });
 ScrollReveal().reveal(
-    ".skills-description, .services-description, .contact-card, .client-swiper, .contact-left h2",
+    ".skills-description, .services-description, .contact-card, .client-swiper",
     {
         delay: 500,
         origin: "right",
