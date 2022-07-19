@@ -1086,7 +1086,7 @@ footer a {
     font-weight: 600;
     background: linear-gradient(to top, transparent 0%, #fff 50%);
     -webkit-background-clip: text;
-    /* background-clip: text; */
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: .8;
 }
